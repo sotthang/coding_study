@@ -28,7 +28,7 @@ or
 ```python
 import sys
 
-x = map(int, sys.stdin.readline().split())
+x, y = map(int, sys.stdin.readline().split())
 ```
 
 input 과 sys.stdin.readline() 은 입력 속도의 차이가 크기에 
