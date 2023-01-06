@@ -19,7 +19,7 @@ a = int(sys.stdin.readline())
 ```
 <br>
 
-입력 값이 integer 여러 개인 경우
+입력 값이 integer 2개인 경우
 
 ```python
 x, y = map(int, input().split())
@@ -30,6 +30,19 @@ import sys
 
 x, y = map(int, sys.stdin.readline().split())
 ```
+
+입력 값이 integer 여러 개인 경우 (리스트에 하나씩)
+
+```python
+x = list(map(int, input().split()))
+```
+or
+```python
+import sys
+
+x = list(map(int, sys.stdin.readline().split()))
+```
+
 
 input 과 sys.stdin.readline() 은 입력 속도의 차이가 크기에 
 <br>
