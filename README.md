@@ -30,6 +30,7 @@ import sys
 
 x, y = map(int, sys.stdin.readline().split())
 ```
+<br>
 
 입력 값이 integer 여러 개인 경우 (리스트에 하나씩)
 
