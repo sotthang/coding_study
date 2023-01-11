@@ -5,7 +5,7 @@
 <br>
 <br>
 
-## 백준 문제 입력 받는 
+## 백준 문제 입력 받는 방법
 입력 값이 integer 하나인 경우
 
 ```python
@@ -44,7 +44,6 @@ import sys
 x = list(map(int, sys.stdin.readline().split()))
 ```
 
-
 input 과 sys.stdin.readline() 은 입력 속도의 차이가 크기에 
 <br>
 sys.stdin.readline() 코드를 사용하면 시간 초과로 인한 에러를 줄일 수 있다
@@ -60,3 +59,9 @@ input = sys.stdin.readline
 ```
 <br>
 [입력 속도 비교](https://www.acmicpc.net/blog/view/56)
+<br>
+<br>
+input() 과 sys.stdin.readline() 의 차이
+<br>
+1. input() 은 parameter로 prompt message를 받을 수 있지만, sys.stdin.readline()은 prompt message를 인수로 받지 않음
+2. input() 은 입력받은 값의 개행 문자를 삭제시켜서 리턴하지만, sys.stdin.readline()은 개행 문자를 포함한 값을 리턴
