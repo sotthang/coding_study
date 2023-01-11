@@ -19,6 +19,19 @@ a = int(sys.stdin.readline())
 ```
 <br>
 
+입력 값이 string 하나인 경우
+
+```python
+a = str(input())
+```
+or
+```python
+import sys
+
+a = str(sys.stdin.readline().strip())
+```
+<br>
+
 입력 값이 integer 2개인 경우
 
 ```python
