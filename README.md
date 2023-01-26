@@ -5,7 +5,10 @@
 <br>
 <br>
 
-## 백준 문제 입력 받는 방법
+## 백준, swea 문제 입력 받는 방법 
+
+(swea 는 import sys 지원 안함)
+
 입력 값이 integer 하나인 경우
 
 ```python
