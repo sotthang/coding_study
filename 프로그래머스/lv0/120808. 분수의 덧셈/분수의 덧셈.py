@@ -1,7 +1,9 @@
-import math
+def gcd(x, y):
+    while y:
+        x, y = y, x%y
+    return x
 
-def solution(denum1, num1, denum2, num2):
-    denum = denum1 * num2 + denum2 * num1
-    num = num1 * num2
-    gcd = math.gcd(denum, num)
-    return [denum//gcd, num//gcd]
+def solution(numer1, denom1, numer2, denom2):
+    numer, denom = numer1*denom2 + numer2*denom1, denom1*denom2
+    gcd_num = gcd(numer, denom)
+    return [numer//gcd_num, denom//gcd_num]
