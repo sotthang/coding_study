@@ -1,9 +1,9 @@
 for _ in range(int(input())):
     input()
     a, b, c, d = map(int, input().split())
-    li = sorted([a, b, c])
-    while d != 0:
-        d -= 1
-        li[-1] -= 1
-        li.sort()
-    print(li[0] * li[1] * li[2])
+    a, b, c = sorted((a, b, c))
+    s = a + b + c - d
+    a1 = min(s // 3, a)
+    s -= a1
+    b1 = min(s // 2, b)
+    print(a1 * b1 * (s - b1))
